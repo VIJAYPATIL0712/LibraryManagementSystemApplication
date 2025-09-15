@@ -56,10 +56,10 @@ public class BookController {
 	}
 
 	//Find All
-//	@GetMapping("/findAll")
-//	protected ResponseEntity<List<Book>> findAll(){
-//		List<Book> allBooks = bookService.findAll();
-//		return new ResponseEntity<List<Book>>(allBooks , HttpStatus.OK);
-//	}
+	@GetMapping("/findAll")
+	protected ResponseEntity<List<Book>> findAll(){
+		List<Book> allBooks = bookService.findAll();
+		return new ResponseEntity<List<Book>>(allBooks , HttpStatus.OK);
+	}
 }
  
